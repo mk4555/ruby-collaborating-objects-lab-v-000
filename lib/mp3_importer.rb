@@ -1,7 +1,7 @@
 require('pry')
 class MP3Importer
   attr_accessor :path
-  
+
   @@all = []
 
   def initialize(path)
@@ -13,7 +13,7 @@ class MP3Importer
   end
 
   def import
-    Dir.entries(@path).each do |file|
+    Dir.entries(@path)
       
   end
 end
