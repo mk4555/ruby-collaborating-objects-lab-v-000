@@ -10,7 +10,7 @@ class MP3Importer
     Dir.entries(@path).reject {|file| !file.end_with?(".mp3")}
   end
 
-  def self.import
+  def import
     @@all << self
   end
 end
