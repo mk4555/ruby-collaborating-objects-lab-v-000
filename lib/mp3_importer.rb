@@ -14,6 +14,8 @@ class MP3Importer
 
   def import
     d = Dir.entries(@path).reject {|file| !file.end_with?(".mp3")}
-    
+    d.each do |file|
+      @@all << file
+      Song.new_by_filename(file)
   end
 end
