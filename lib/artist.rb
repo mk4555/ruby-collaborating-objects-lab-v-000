@@ -34,6 +34,7 @@ class Artist
       end
     end
     s = Artist.new(name)
+    s.save
     s
   end
 
