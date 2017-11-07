@@ -31,7 +31,10 @@ class Artist
     if !@@all.include?(name)
       Artist.new(name)
     else
-      @@all[name]
+      @@all.each do |artist|
+        return artist if artist == name
+      end
+    end
     end
 
   end
