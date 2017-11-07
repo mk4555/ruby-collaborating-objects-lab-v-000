@@ -14,6 +14,6 @@ class MP3Importer
 
   def import
     d = Dir.entries(@path).reject {|file| !file.end_with?(".mp3")}
-    f = d.split(" - ")
+    
   end
 end
