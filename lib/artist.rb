@@ -23,6 +23,9 @@ class Artist
     @@all
   end
 
+  def artist=(name)
+    
+  end
   def self.save
     @@all << self
   end
@@ -34,7 +37,6 @@ class Artist
       end
     end
     s = Artist.new(name)
-    s
   end
 
   def print_songs
