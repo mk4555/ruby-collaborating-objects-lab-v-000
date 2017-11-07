@@ -35,7 +35,5 @@ class Artist
         return artist if artist == name
       end
     end
-    end
-
   end
 end
