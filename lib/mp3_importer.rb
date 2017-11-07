@@ -13,7 +13,7 @@ class MP3Importer
   end
 
   def import
-    Dir.entries(@path)
-      
+    d = Dir.entries(@path)
+    binding.pry
   end
 end
