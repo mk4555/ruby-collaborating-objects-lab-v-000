@@ -15,6 +15,6 @@ class MP3Importer
     d.each do |file|
       s = Song.new_by_filename(file)
     end
-
+    binding.pry
   end
 end
