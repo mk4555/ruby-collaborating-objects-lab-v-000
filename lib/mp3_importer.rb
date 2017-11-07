@@ -7,7 +7,7 @@ class MP3Importer
   end
 
   def files
-    # d = Dir["db/mp3s/*.mp3"].collect{|path| path.split("/").last}
+    Dir[@path].reject {|file| !file.end_with?(".mp3")}
     # d
     Dir.entries(@path).reject {|file| !file.end_with?(".mp3")}
   end
