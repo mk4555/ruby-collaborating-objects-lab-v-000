@@ -28,12 +28,6 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    if !@@all.include?(name)
-      Artist.new(name)
-    else
-      @@all.each do |artist|
-        artist if artist == name
-      end
-    end
+    
   end
 end
