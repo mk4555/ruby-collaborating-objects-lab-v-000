@@ -13,7 +13,6 @@ class Song
   def self.new_by_filename(file)
     f = file.split(" - ")
     s = Song.new(f[1])
-    binding.pry
-
+    s
   end
 end
