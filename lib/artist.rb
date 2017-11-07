@@ -9,5 +9,7 @@ class Artist
     @name = name
   end
 
-
+  def save(artist)
+    @@all << artist
+  end
 end
