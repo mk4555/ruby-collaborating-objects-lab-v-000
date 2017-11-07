@@ -23,7 +23,7 @@ class Artist
     @@all
   end
 
-  def save
+  def self.save
     @@all << self
   end
 
@@ -33,7 +33,8 @@ class Artist
 
   def self.find_or_create_by_name(name)
     if self.find_by_name(name) == nil
-      Artist.new(name)
+      s = Artist.new(name)
+      s.save
     else
       self.find_by_name(name)
     end
