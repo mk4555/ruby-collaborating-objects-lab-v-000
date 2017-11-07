@@ -1,7 +1,7 @@
 require('pry')
 class MP3Importer
   attr_accessor :path
-  
+
   def initialize(path)
     @path = path
   end
@@ -12,10 +12,10 @@ class MP3Importer
 
   def import
     d = Dir.entries(@path).reject {|file| !file.end_with?(".mp3")}
-    # d.each do |file|
-    #   s = Song.new_by_filename(file)
-    #   binding.pry
-    # end
+    d.each do |file|
+      s = Song.new_by_filename(file)
+      binding.pry
+    end
 
   end
 end
