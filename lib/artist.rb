@@ -32,7 +32,7 @@ class Artist
       Artist.new(name)
     else
       @@all.each do |artist|
-        return artist if artist == name
+        artist if artist == name
       end
     end
   end
