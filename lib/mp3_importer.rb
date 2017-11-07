@@ -13,6 +13,7 @@ class MP3Importer
     d = Dir.entries(@path).reject {|file| !file.end_with?(".mp3")}
     d.each do |file|
       s = Song.new_by_filename(file)
+      binding.pry
     end
 
   end
