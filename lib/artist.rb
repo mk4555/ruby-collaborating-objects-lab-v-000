@@ -35,6 +35,7 @@ class Artist
     if self.find_by_name(name) == nil
       s = Artist.new(name)
       s.save
+      s
     else
       self.find_by_name(name)
     end
@@ -45,5 +46,5 @@ class Artist
       puts "#{song.name}"
     end
   end
-  
+
 end
