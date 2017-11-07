@@ -8,7 +8,9 @@ class MP3Importer
 
   def files
     d = Dir["db/mp3s/*.mp3"].collect{|path| path.split("/").last}
-    binding.pry
+    d.each do |x|
+      puts "#{x}"
+    end
   end
 
   def import
