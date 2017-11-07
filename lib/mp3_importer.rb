@@ -7,9 +7,9 @@ class MP3Importer
   end
 
   def files
-    Dir[@path].reject {|file| !file.end_with?(".mp3")}
+    # Dir[@path].reject {|file| !file.end_with?(".mp3")}
     # d
-    # Dir.entries(@path).reject {|file| !file.end_with?(".mp3")}
+    Dir.entries(@path).reject {|file| !file.end_with?(".mp3")}
   end
 
   def import
