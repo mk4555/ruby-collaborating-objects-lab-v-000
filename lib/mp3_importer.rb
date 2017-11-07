@@ -13,6 +13,6 @@ class MP3Importer
   end
 
   def import
-    
+    @@all << self
   end
 end
