@@ -1,9 +1,6 @@
 require('pry')
 class MP3Importer
   attr_accessor :path
-
-  @@all = []
-
   def initialize(path)
     @path = path
   end
@@ -18,5 +15,6 @@ class MP3Importer
       @@all << file
       Song.new_by_filename(file)
     end
+    @
   end
 end
