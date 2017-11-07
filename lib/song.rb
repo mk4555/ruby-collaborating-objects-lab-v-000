@@ -14,6 +14,7 @@ class Song
     f = file.split(" - ")
     s = Song.new(f[1])
     s.artist = (f[0])
+    s.artist.add_song(s)
     s
   end
 end
