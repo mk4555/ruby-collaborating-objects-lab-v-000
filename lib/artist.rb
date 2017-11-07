@@ -24,8 +24,9 @@ class Artist
   end
 
   def artist=(name)
-    
+      @artist = name
   end
+
   def self.save
     @@all << self
   end
